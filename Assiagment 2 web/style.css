@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+    color: white; 
+}
+.mothers-day p {color: black;}
+.ipad-pro p{ color: white;}
+.ipad-air p {
+    color:white; /* Set paragraph color to black */
+}
+
+
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    position: relative; /* Set header position to relative */
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150; /* Adjust the height of the blurred header */
+    background-color: rgba(116, 55, 55, 0.407); /* Blurred header color with opacity */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 1; /* Ensure the blurred header is behind other content */
+}
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2; /* Change z-index to 2 to display above the blurred header */
+}
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2; /* Change z-index to 2 to display above the blurred header */
+}
+
+.icons i {
+    margin-left: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+
+.mothers-day {
+    background-image: url(image1/gift.jpg);
+    background-color:white;
+    border: 4px solid white;
+    height: 650px;
+    width: auto;
+    margin: 100px;
+    text-align: center;
+    
+}
+
+.ipad-pro {
+    background-image: url(image3/pro.jpeg);
+    background-color: white;
+    border: 4px solid white;
+    height: 650px;
+    width: auto;
+    margin: 100px;
+    text-align: center;
+}
+
+.ipad-air {
+    background-image: url(image2/air\ 5.jpeg);
+    background-color:black;
+    border: 4px solid black;
+    height: 650px;
+    width: auto;
+    margin: 100px;
+    text-align: center;
+}
+
+.mothers-day p,
+.ipad-pro p,
+.ipad-air p {
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 35px; /* Set font size to 18px (adjust as needed) */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-prominent {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-prominent:hover {
+    background-color: #0056b3;
+}
+
+.mothers-day {
+    border: 4px solid white
+    background-color white
+    height  650px;
+    width : auto;
+    margin : 100px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.mothers-day:hover {
+    transform: translate(-5px, -5px); /* Move the div slightly to the left and up */
+}
+.ipad-air {
+    border: 4px solid black;
+    background-color: black;
+    height: 650px;
+    width: auto;
+    margin: 100px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.ipad-air:hover {
+    transform: translate(-5px, -5px); /* Move the div slightly to the left and up */
+}
+
+.ipad-pro {
+    border: 4px solid black;
+    background-color:black;
+    height: 650px;
+    width: auto;
+    margin: 100px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.ipad-pro:hover {
+    transform: translate(-5px, -5px); /* Move the div slightly to the left and up */
+}
+
+
+footer {
+    text-align: center; /* Center align the content */
+    margin-top: 50px; /* Add top margin for spacing */
+}
+
+footer div {
+    font-weight:lighter; /* Set font weight to bold */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
